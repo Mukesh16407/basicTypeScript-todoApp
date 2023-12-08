@@ -8,6 +8,7 @@ type TodoInputProps={
 export const TodoInput = (props:TodoInputProps) => {
     const {onAdd} = props
     const [value,setValue] = useState<string>('');
+    
     const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
         setValue(e.target.value)
     }
